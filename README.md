@@ -11,7 +11,7 @@ Features
 Author
 - Cristina Martí-Solana
 
-Quickstart
+## Quickstart
 1. Clone this repository (or download the single script):
 
    ```bash
@@ -32,7 +32,7 @@ Quickstart
    python data_downloader.py
    ```
 
-What to expect
+## What to expect
 - The script prompts for a download directory (default: `downloads`).
 - You will be asked to enter your AVISO+ username and password (credentials are required to access the FTP server).
 - The script lists top-level folders on the FTP server. Choose one by number.
@@ -41,10 +41,10 @@ What to expect
   - Typing `all` to select all files in the current folder.
   - Typing `all` when prompted for subfolder choice to perform a recursive search and select all `.nc` files under the current path.
 
-Notes on dependencies
+## Notes on dependencies
 - The script uses only Python standard library modules (`ftplib`, `getpass`, `os`). No external packages are required.
 
-Examples (interactive session)
+## Examples (interactive session)
 
 1) Run and pick a folder
 
@@ -59,11 +59,11 @@ Examples (interactive session)
 
 3) The script will download files into the download directory and skip files already present locally.
 
-Project layout
+## Project layout
 - `data_downloader.py` — main interactive downloader script.
 
-Security & credentials
+## Security & credentials
 - The script requests your AVISO+ username and password at runtime and uses them only to authenticate to the FTP server. Credentials are not stored by the script.
 
-License
+## License
 - This project is licensed under the MIT License — see the `LICENSE` file for details.
